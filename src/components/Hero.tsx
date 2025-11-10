@@ -14,7 +14,7 @@ export function Hero() {
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fadeInUp">
             <h1 className="text-gray-900">
               Професійний клінінг для вашого дому та офісу
             </h1>
@@ -50,8 +50,8 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative animate-scaleIn">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl transition-smooth hover:shadow-xl">
               <ImageWithFallback 
                 src="https://images.unsplash.com/photo-1760827797819-4361cd5cd353?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjbGVhbmluZyUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXx8fHwxNzYyNjc0MDYxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Професійне прибирання"

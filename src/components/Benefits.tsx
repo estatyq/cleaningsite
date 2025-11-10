@@ -49,7 +49,7 @@ export function Benefits() {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {benefits.map((benefit, index) => (
-                <div key={index} className="space-y-2">
+                <div key={index} className="space-y-2 animate-fadeInUp transition-smooth hover:scale-105" style={{ animationDelay: `${index * 100}ms` }}>
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                     <benefit.icon className="w-6 h-6 text-blue-600" />
                   </div>
@@ -60,8 +60,8 @@ export function Benefits() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative animate-scaleIn">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl transition-smooth hover:shadow-2xl">
               <ImageWithFallback 
                 src="https://images.unsplash.com/photo-1758523670634-df4e12ed7a26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjbGVhbiUyMGhvbWV8ZW58MXx8fHwxNzYyNjgwODIzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Чистий дім"

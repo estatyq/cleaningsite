@@ -62,7 +62,7 @@ export function Reviews() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((review, index) => (
-            <Card key={index}>
+            <Card key={index} className="hover:shadow-lg transition-smooth hover:scale-105 animate-fadeInUp" style={{ animationDelay: `${index * 100}ms` }}>
               <CardContent className="pt-6">
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar>

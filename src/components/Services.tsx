@@ -55,7 +55,7 @@ export function Services() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
+            <Card key={index} className="hover:shadow-lg transition-smooth hover:scale-105 animate-fadeInUp" style={{ animationDelay: `${index * 100}ms` }}>
               <CardHeader>
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <service.icon className="w-6 h-6 text-blue-600" />
